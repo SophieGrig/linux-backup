@@ -31,3 +31,6 @@ alias sleep='systemctl suspend'
 
 # GPU fan control
 /home/sofia/linux-backup/custom-commands/gpu_fan_control.sh &
+
+#find cuda
+export PATH=/run/media/sofia/More\ Apps_Personal/cuda/cuda-12.8/bin:$PATH
