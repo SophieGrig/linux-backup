@@ -7,11 +7,8 @@ TARGET_DIR="$HOME/linux-backup"
 # Clone the repository into the target directory
 git clone "$REPO_URL" "$TARGET_DIR" || { echo "Failed to clone the repository."; exit 1; }
 
-# Change to the target directory
-cd "$TARGET_DIR" || { echo "Failed to access $TARGET_DIR."; exit 1; }
-
-# Make all files inside the directory executable
-chmod +x *
+# Make all files inside the custom-commands directory executable
+chmod +x "$TARGET_DIR/custom-commands"/*
 
 # Confirm completion
-echo "All files in $TARGET_DIR are now executable."
+echo "All files in $TARGET_DIR/custom-commands are now executable."
