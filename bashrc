@@ -72,3 +72,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # System suspend command
 alias sleep='systemctl suspend'
+
+# GPU fan control
+/home/sofia/linux-backup/custom-commands/gpu_fan_control.sh &
