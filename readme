@@ -1,0 +1,7 @@
+copy content of git-download-exec.sh to a similarly named file in /home/sofia/
+make it executrable with chmod +x git-download-exec.sh
+execute it
+copy bachrc to .bachrc located in /home/sofia/
+on terminal run source ~/.bashrc
+copy contents of plasma-org.kde.plasma.desktop-appletsrc to the correct file in /home/sofia/.config/plasma-org.kde.plasma.desktop-appletsrc
+run kquitapp5 plasmashell && kstart5 plasmashell
