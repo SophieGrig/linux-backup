@@ -34,3 +34,12 @@ alias sleep='systemctl suspend'
 
 #find cuda
 export PATH=/run/media/sofia/More\ Apps_Personal/cuda/cuda-12.8/bin:$PATH
+
+coffee() {
+    if [[ -z "$1" ]]; then
+        echo "Usage: coffee <minutes>"
+        return 1
+    fi
+    echo "Keeping system awake for $1 minutes..."
+    systemd-inhibit --what=idle sleep $(( $1 * 60 ))
+}
